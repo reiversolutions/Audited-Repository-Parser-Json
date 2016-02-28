@@ -1,5 +1,7 @@
 ﻿using AuditedRepository.Interfaces.Models;
 using AuditedRepository.Interfaces.Parsers;
+using AuditedRepository.Parsers;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace AuditedRepository.Parser.Json
 {
-    public class JsonParser<T> : IParser<T> where T : class, IEntity
+    public class JsonParser<T> : ParserBase<T>, IParser<T> where T : class, IEntity
     {
-        public string Parse(T entity)
+        public override string Parse(T entity)
         {
-            throw new NotImplementedException();
+            return JsonConvert.SerializeObject(entity);
         }
     }
 }
