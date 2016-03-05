@@ -36,11 +36,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AuditedRepository, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AuditedRepository.0.0.8-beta\lib\AuditedRepository.dll</HintPath>
+      <HintPath>..\..\packages\AuditedRepository.0.0.13-beta\lib\AuditedRepository.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AuditedRepository.Parser.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AuditedRepository.Json.0.0.1-beta\lib\AuditedRepository.Parser.Json.dll</HintPath>
+      <HintPath>..\..\packages\AuditedRepository.Json.0.0.2-beta\lib\AuditedRepository.Parser.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
