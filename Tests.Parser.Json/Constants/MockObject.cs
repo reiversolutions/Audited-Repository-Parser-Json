@@ -15,15 +15,15 @@ namespace Tests.Parser.Json.Constants
         public static IEntity BASIC_ENTITY = new Entity()
         {
             Id = Guid.NewGuid().ToString(),
-            CreatedDate = DateTime.Now.Date,
-            ModifiedDate = DateTime.Now.Date,
+            CreatedDate = DateTime.UtcNow.Date,
+            ModifiedDate = DateTime.UtcNow.Date,
             IsArchived = false
         };
         public static IMockEntity BASIC_MOCKENTITY = new MockEntity()
         {
             Id = Guid.NewGuid().ToString(),
-            CreatedDate = DateTime.Now.Date,
-            ModifiedDate = DateTime.Now.Date,
+            CreatedDate = DateTime.UtcNow.Date,
+            ModifiedDate = DateTime.UtcNow.Date,
             IsArchived = false,
             Message = "Testing",
             IsTest = true

@@ -48,8 +48,8 @@ namespace Tests.Parser.Json
                 "\"Id\":\"{0}\",\"IsArchived\":{1},\"ModifiedDate\":\"{2}\",\"CreatedDate\":\"{3}\"",
                 MockObject.BASIC_ENTITY.Id,
                 MockObject.BASIC_ENTITY.IsArchived.ToString().ToLower(),
-                MockObject.BASIC_ENTITY.ModifiedDate.ToString("yyyy-MM-ddTHH:mm:ss+00:00"),
-                MockObject.BASIC_ENTITY.CreatedDate.ToString("yyyy-MM-ddTHH:mm:ss+00:00")
+                MockObject.BASIC_ENTITY.ModifiedDate.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+                MockObject.BASIC_ENTITY.CreatedDate.ToString("yyyy-MM-ddTHH:mm:ssZ")
             );
             jsonExpected = "{" + jsonExpected + "}";
 
@@ -69,8 +69,8 @@ namespace Tests.Parser.Json
                 "\"Message\":\"{4}\",\"IsTest\":{5},\"Id\":\"{0}\",\"IsArchived\":{1},\"ModifiedDate\":\"{2}\",\"CreatedDate\":\"{3}\"",
                 MockObject.BASIC_MOCKENTITY.Id,
                 MockObject.BASIC_MOCKENTITY.IsArchived.ToString().ToLower(),
-                MockObject.BASIC_MOCKENTITY.ModifiedDate.ToString("yyyy-MM-ddTHH:mm:ss+00:00"),
-                MockObject.BASIC_MOCKENTITY.CreatedDate.ToString("yyyy-MM-ddTHH:mm:ss+00:00"),
+                MockObject.BASIC_MOCKENTITY.ModifiedDate.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+                MockObject.BASIC_MOCKENTITY.CreatedDate.ToString("yyyy-MM-ddTHH:mm:ssZ"),
                 MockObject.BASIC_MOCKENTITY.Message,
                 MockObject.BASIC_MOCKENTITY.IsTest.ToString().ToLower()
             );
